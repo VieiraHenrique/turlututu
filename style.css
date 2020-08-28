@@ -1,0 +1,200 @@
+/******* RESET AND INIT ********/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
+
+:root {
+    --color-primary: #1396CA;
+    --color-primary-dark: #09577E;
+    --color-secondary: #ED6723;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 92.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/******** HEADER ***********/
+
+.header {
+    background: #333;
+}
+
+.header .container {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu--logo img {
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+.header__menu--list ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.header__menu--list ul li a {
+    color: #fff;
+}
+
+.login {
+    color: #fff;
+}
+
+.hero {
+    background: var(--color-primary);
+}
+
+/************  SECTION HERO   **************/
+
+.hero .container {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 5rem;
+}
+
+.hero .container img {
+    width: 20rem;
+}
+
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero .container .hero__title img {
+    width: 10rem;
+}
+
+.hero__title h2 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.hero__title a {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--color-secondary);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+/******** INTERSECTION **********/
+
+.intersection .container {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+/****** CARDS *********/
+
+.cards {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.cards .container {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.cards__item {
+    padding: 3rem;
+}
+
+.cards__item h3 {
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
+.cards__item p {
+    color: #eaeaea;
+}
+
+/***************************/
+
+.brands {
+    background: #EFEFEF;
+}
+
+.brands .container {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brands img {
+    filter: grayscale(1) contrast(.2);
+}
+
+footer {
+    
+}
+
+footer .container {
+    height: 30rem;
+    padding: 5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.orange {
+    background: var(--color-secondary);
+}
+
+.blue {
+    background: var(--color-primary-dark);
+}
